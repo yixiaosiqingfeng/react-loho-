@@ -1,0 +1,22 @@
+@function rem($val){
+    @return $val/37.5 + rem;
+}
+
+.list_item{
+    width: rem(375);
+    height: rem(45);
+    background: #fff;
+    ul{
+        height: rem(45);
+        display: flex;
+        justify-content:space-around ;
+        align-items: center;
+        li{
+            flex: 1;
+            margin-left: rem(34);
+        }
+        .active{
+            color: red;
+        }
+    }
+}

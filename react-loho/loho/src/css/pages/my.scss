@@ -1,0 +1,42 @@
+@function rem($val){
+    @return $val/37.5 + rem;
+}
+
+.my{
+    width: rem(375);
+    .my_nav{
+        width: rem(375);
+        height: rem(45);
+        margin-bottom: rem(2);
+        position: relative;
+        i{
+            color: #888;
+            margin-right: rem(10);
+        }
+        i:nth-child(1){
+            color: #888;
+            margin-right: rem(30);
+        }
+    }
+    
+    .my_footer{
+        height: rem(60);
+        background: #fff;
+        position: fixed;
+        left: rem(0);
+        bottom: rem(0);
+        right:rem(0);
+        display: flex;
+        align-items: center;
+        p{
+            flex: 1;
+            text-align: center;
+        }
+        p:nth-child(2){
+            height: rem(60);
+            background: gainsboro;
+            color: #444;
+            line-height: rem(60);
+        }
+    }
+}

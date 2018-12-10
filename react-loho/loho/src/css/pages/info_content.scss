@@ -1,0 +1,78 @@
+@function rem($val){
+    @return $val/37.5 + rem;
+}
+
+.info_content{
+    width: rem(375);
+    ul{
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        li{
+            background: #fff;
+            border: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            span{
+                padding-left: rem(25);
+                padding-right: rem(10);
+                display: inline-block;
+                line-height: rem(55);
+            }
+            span:nth-child(1){
+                width: rem(137);
+                text-align: left;
+                color: #ccc;
+                
+            }
+            span:nth-child(2){
+                width: rem(215);
+                text-align: right;
+                color: #333;
+            }
+            img{
+                width: rem(370);
+                height: rem(493);
+            }
+            p{
+                padding-bottom: rem(15);
+                
+                padding-left: rem(10);
+                padding-right: rem(10);
+            }
+            p:nth-child(1){
+                padding-top: rem(15);
+                font-size: rem(12);
+                color: #333;
+            }
+            p:nth-child(2){
+                padding-top: rem(15);
+                font-size: rem(12);
+                color: #c1c1c1;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    flex: 1;
+                }
+                a:nth-child(2){
+                    text-align: right;
+                }
+            }
+            p:nth-child(3){
+                font-size: rem(12);
+                color: #c1c1c1;
+                margin-top: rem(5);
+            }
+            p:nth-child(4){
+                font-size: rem(12);
+                border-top:1px solid #eee ;
+                border-bottom:1px solid #eee ;
+                color: #333;
+                text-align: center;
+                line-height: rem(29);
+            }
+            
+        }
+    }
+    
+}

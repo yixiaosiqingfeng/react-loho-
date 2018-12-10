@@ -1,0 +1,37 @@
+@function rem($val){
+    @return $val/37.5 + rem;
+}
+
+.list_content{
+    width: rem(375);
+    .list_content_item{
+        padding: rem(9);
+        img{
+            width: rem(160);
+            height: rem(63);
+            margin-top: rem(26);
+            margin-bottom: rem(26);
+        }
+        .title{
+            height: rem(40);
+            font-size: rem(13);
+            color: #333;
+            line-height: rem(21);
+            margin-bottom: rem(27);
+        }
+        .content{
+            display: flex;
+            span{
+                flex: 1;
+            }
+            span:nth-child(1){
+                color: #E51C23;
+                font-size: rem(15);
+            }
+            span:nth-child(2){
+                color: #999;
+                font-size: rem(12);
+            }
+        }
+    }
+}

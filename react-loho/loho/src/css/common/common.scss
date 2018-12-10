@@ -1,0 +1,28 @@
+@function rem($val){
+    @return $val/37.5 + rem;
+}
+
+html,body{
+    width:rem(375);
+    height:100%;
+}
+#root{
+    width:rem(375);
+    height:100%;
+}
+.container{
+    width:rem(375);
+    height:100%;
+    position:relative;
+    .content{       
+    }
+    .am-tab-bar{
+        height:auto;
+        position:fixed;
+        left:0;
+        bottom:0;
+        right:0;
+        background: #fff;
+        z-index: 999;
+    }
+}

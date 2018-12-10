@@ -1,0 +1,40 @@
+@function rem($val){
+    @return $val/37.5 + rem;
+}
+
+.nearby{
+    width: rem(375);
+    .nearby_nav{
+        width: rem(375);
+        height: rem(55);
+        border: 1px solid red;
+        background: #fff;
+        ul{
+            height: rem(55);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                flex:1;
+            }
+            li:nth-child(1){
+                i{
+                    font-size: rem(21);
+                    color: #666;
+                    margin-left: rem(22);
+                }
+            }
+            li:nth-child(2){
+                text-align: center;
+            }
+            li:nth-child(3){
+                display: flex;
+                i{
+                    font-size: rem(17);
+                    margin-left: rem(23);
+                    color: #666;
+                }
+            }
+        }
+    }
+}
