@@ -1,0 +1,94 @@
+@function rem($val){
+    @return $val/37.5 + rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+.reg{
+    width: rem(375);
+    .reg_nav{
+        height: rem(55);
+        background: #fff;
+        ul{
+            height: rem(55);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                flex:1;
+            }
+            li:nth-child(1){
+                i{
+                    font-size: rem(21);
+                    color: #666;
+                    margin-left: rem(22);
+                }
+            }
+            li:nth-child(2){
+                text-align: center;
+            }
+            li:nth-child(3){
+                display: flex;
+                i{
+                    font-size: rem(17);
+                    margin-left: rem(23);
+                    color: #666;
+                }
+            }
+        }
+    }
+    .reg_content{
+        background: #fff;
+        padding-left: rem(18);
+        margin-top: rem(13);
+        div{
+            padding-top: rem(15);
+            display: flex;
+            position: relative;
+            p{
+                width: rem(70);
+                font-size: rem(14);
+                margin-right: rem(15);
+                color: #333;
+                text-align: center;
+            }
+            input{
+                width: rem(270);
+                border: none;
+                padding-bottom: rem(15);
+                border-bottom: 1px solid #ccc;
+            }
+            span{
+                padding-top: rem(15);
+                padding-bottom:rem(15) ;
+                padding-left: rem(20);
+                padding-right:rem(20) ;
+                position: absolute;
+                top:rem(1);
+                right: rem(0);
+                background: #e8343b!important;
+                color: #fff;
+            }
+        }
+    }
+    .reg_zhuce{
+        margin-top: rem(60);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: #fff;
+            padding-left: rem(60);
+            padding-right: rem(60);
+            padding-bottom: rem(10);
+            padding-top: rem(10);
+            background: #e8343b;
+        }
+    }
+}

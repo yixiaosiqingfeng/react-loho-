@@ -1,0 +1,32 @@
+@function rem($val){
+    @return $val/37.5 + rem;
+}
+
+.info_tab{
+    width: rem(375);
+    background: #fff;
+    margin-top: rem(10);
+    ul{
+        height: rem(50);
+        border-bottom:rem(1) solid #eee;
+        display: flex;
+        align-items: center;
+        li{
+            flex: 1;
+            margin-left: rem(34);
+        }
+        li:nth-child(1){
+             padding-right: rem(16);
+             border-right: rem(1) solid #ccc;
+             box-sizing: border-box;
+        }
+        li:nth-child(2){
+             padding-right: rem(16);
+             border-right: rem(1) solid #ccc;
+             box-sizing: border-box;
+        }
+        .active{
+            color: red;
+        }
+    }
+}
